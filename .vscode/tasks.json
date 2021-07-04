@@ -17,10 +17,7 @@
         "owner": "typescript",
         "source": "ts",
         "applyTo": "closedDocuments",
-        "fileLocation": [
-          "relative",
-          "${cwd}"
-        ],
+        "fileLocation": ["relative", "${cwd}"],
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
@@ -36,7 +33,7 @@
     {
       "type": "func",
       "command": "host start",
-      "problemMatcher": "$func-node-watch",
+      "problemMatcher": "$func-watch",
       "isBackground": true,
       "dependsOn": "npm build",
       "options": {
